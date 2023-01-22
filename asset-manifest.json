@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TutorFind-react-Js/static/css/main.d6ba2acd.css",
+    "main.js": "/TutorFind-react-Js/static/js/main.d0644da9.js",
+    "static/media/footer.jpg": "/TutorFind-react-Js/static/media/footer.645ebf7188ab01541ae1.jpg",
+    "static/media/logo.png": "/TutorFind-react-Js/static/media/logo.aa1d6c4054d4b041db04.png",
+    "index.html": "/TutorFind-react-Js/index.html",
+    "main.d6ba2acd.css.map": "/TutorFind-react-Js/static/css/main.d6ba2acd.css.map",
+    "main.d0644da9.js.map": "/TutorFind-react-Js/static/js/main.d0644da9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6ba2acd.css",
+    "static/js/main.d0644da9.js"
+  ]
+}
