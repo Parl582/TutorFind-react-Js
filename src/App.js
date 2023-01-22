@@ -8,6 +8,7 @@ import {
 import AllTecherHome from "./components/allTeacher/AllTecherHome";
 import LandingHome from "./components/landingPage/LandingHome";
 import Navbar from "./components/navBar/Navbar";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const user = true;
@@ -16,6 +17,7 @@ function App() {
       <>
         <Navbar />
         <Outlet />
+        <Footer />
       </>
     );
   };

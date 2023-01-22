@@ -6,7 +6,7 @@ const Navbar = () => {
   const [clicked, setClicked] = useState(false);
   return (
     <>
-      <div className="flex items-center justify-between h-[80px] border-b-2 z-20 bg-[#fff] w-full top-0 sticky px-3 md:px-7">
+      <div className="flex items-center justify-between h-[80px] shadow-lg z-20 bg-[#fff] w-full top-0 sticky px-3 md:px-7">
         <div className="md:w-[150px] w-[100px] h-[90%]">
           <Link to="/">
             <img
