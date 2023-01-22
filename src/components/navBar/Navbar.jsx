@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
       <div className="flex items-center justify-between h-[80px] border-b-2 z-20 bg-[#fff] w-full top-0 sticky px-3 md:px-7">
         <div className="">
-          <Link to="/">Logo</Link>
+          <Link to="/">TuitionMaster</Link>
         </div>
         <div className=" items-center list-none space-x-7 md:flex hidden">
           <li>Home</li>
