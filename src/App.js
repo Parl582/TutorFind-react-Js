@@ -1,24 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import {
+  createBrowserRouter,
+  Navigate,
+  Outlet,
+  RouterProvider,
+} from "react-router-dom";
+import AllTecherHome from "./components/allTeacher/AllTecherHome";
+import LandingHome from "./components/landingPage/LandingHome";
+import Navbar from "./components/navBar/Navbar";
 
 function App() {
+  const user = true;
+  const Layout = () => {
+    return (
+      <>
+        <Navbar />
+        <Outlet />
+      </>
+    );
+  };
+
+  const ProtectedRoute = ({ children }) => {
+    if (!user) {
+      return <Navigate to="/login" />;
+    }
+    return children;
+  };
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <LandingHome />,
+        },
+        {
+          path: "/teacher",
+          element: (
+            <ProtectedRoute>
+              <AllTecherHome />,
+            </ProtectedRoute>
+          ),
+        },
+      ],
+    },
+  ]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 
