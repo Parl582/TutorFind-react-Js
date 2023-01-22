@@ -46,7 +46,7 @@ const AllTecherHome = () => {
   return (
     <>
       {loading && (
-        <div className="w-full absolute h-[calc(100vh-80px)] bg-[#fff] flex items-center justify-center">
+        <div className="w-full absolute h-[calc(100vh-80px)] bg-[#fff] flex items-center justify-center z-20">
           <DotLoader
             color="#52a9eb"
             loading={loading}
